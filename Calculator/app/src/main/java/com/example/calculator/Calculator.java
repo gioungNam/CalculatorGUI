@@ -142,9 +142,14 @@ class Calculator
 //        isClear = true;
     }
 
+    /**
+     * 계산
+     * @return 계산결과
+     */
     public float tryCalculation() {
         float calResult = doCalc();
-        textView.setText(String.valueOf(calResult));
+        if (Math.round(calResult) == calResult) textView.setText(String.valueOf((int)calResult));
+        else textView.setText(String.valueOf(calResult));
         init();
 
         return calResult;

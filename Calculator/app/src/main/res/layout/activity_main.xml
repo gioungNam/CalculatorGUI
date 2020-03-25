@@ -47,43 +47,49 @@
             <Button
                 android:id="@+id/button_ac"
                 style="@android:style/Widget.Button"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="6dp"
-                android:background="@drawable/button_design"
+                android:layout_weight="1"
+                android:background="@drawable/button_design_ac"
                 android:text="AC"
                 android:textSize="32sp" />
 
             <Button
                 android:id="@+id/button_op_1"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="6dp"
-                android:background="@drawable/button_design"
+                android:layout_weight="1"
+                android:background="@drawable/button_design_op"
                 android:text="%"
-                android:textSize="32sp"/>
+                android:textSize="32sp" />
 
             <Button
                 android:id="@+id/button_op_2"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="6dp"
-                android:background="@drawable/button_design"
+                android:layout_weight="1"
+                android:background="@drawable/button_design_op"
                 android:text="÷"
-                android:textSize="32sp"/>
+                android:textSize="32sp" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_del"
-                android:layout_width="wrap_content"
+                android:src="@drawable/del_button"
+                android:padding="25dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:background="@drawable/button_design_del"
-                android:text="DEL"
-                android:textSize="32sp" />
+                android:scaleType="fitCenter" />
         </TableRow>
 
         <TableRow
@@ -127,7 +133,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="6dp"
-                android:background="@drawable/button_design"
+                android:background="@drawable/button_design_op"
                 android:text="×"
                 android:textSize="32sp" />
         </TableRow>
